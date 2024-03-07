@@ -395,12 +395,74 @@ img {
 .page-3-bottom-container {
     position: absolute;
     bottom: -80px;
+    width: 100%;
 }
 
 #brick-wall-large-img {
     position: relative;
     width: 100%;
     height: 50%;
+}
+
+
+@media screen and (min-width: 2000px) {
+    .header {
+        height: 200px;
+    }
+    .header-fixed {
+        height: 100px;
+    }
+    .welcome-title-container {
+        max-width:fit-content;
+    }
+
+    .welcome-text-container {
+        max-width: 1500px;
+    }
+
+    .order-button-container {
+        width: 400px;
+        height: 100px;
+    }
+
+    .full-menu-button {
+        width: 400px;
+        height: 180px;
+    }
+
+    #napkin-image {
+        width: 1000px;
+        height: auto;
+    }
+
+    #p2-text {
+        max-width: 800px;
+    }
+
+    #brick-wall-small-img {
+        width: 700px;
+    }
+
+    h1 {
+        font-size: 120px;
+    }
+    
+    h2 {
+        font-size: 65px;
+    }
+    
+    h3 {
+        font-size: 65px;
+    }
+    
+    h4 {
+        font-size: 60px;
+    }
+    
+    p {
+        margin: 10px;
+        font-size: 65px;
+    }
 }
 
 /* medium screen size styles */

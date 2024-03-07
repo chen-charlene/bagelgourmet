@@ -15,26 +15,26 @@ function onScroll() {
     }
 }
 
-window.addEventListener('DOMContentLoaded', () => {
-    const pages = document.querySelectorAll('.page');
-    console.log(pages)
+// window.addEventListener('DOMContentLoaded', () => {
+//     const pages = document.querySelectorAll('.page');
+//     console.log(pages)
   
-    window.addEventListener('scroll', () => {
-      const scrollPosition = window.scrollY;
+//     window.addEventListener('scroll', () => {
+//       const scrollPosition = window.scrollY;
 
   
-      pages.forEach((page, index) => {
-        const pageTop = page.offsetTop;
-        const pageBottom = pageTop + page.offsetHeight;
+//       pages.forEach((page, index) => {
+//         const pageTop = page.offsetTop;
+//         const pageBottom = pageTop + page.offsetHeight;
   
-        if (scrollPosition >= pageTop && scrollPosition < pageBottom) {
-          scrollToPage(index);
-        }
-      });
-    });
+//         if (scrollPosition >= pageTop && scrollPosition < pageBottom) {
+//           scrollToPage(index);
+//         }
+//       });
+//     });
   
-    function scrollToPage(pageIndex) {
-      console.log("scrolling to page")
-      pages[pageIndex].scrollIntoView({ behavior: 'smooth' });
-    }
-  });
+//     function scrollToPage(pageIndex) {
+//       console.log("scrolling to page")
+//       pages[pageIndex].scrollIntoView({ behavior: 'smooth' });
+//     }
+//   });
